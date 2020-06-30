@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  devise_for :users
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
   get '/', to: 'home#index'
 
@@ -9,7 +8,6 @@ Rails.application.routes.draw do
   # resources :profiles
   # resource :settings
 
-  # Devise TODO
   # get '/login'
   # get '/register'
   get '/settings', to: 'settings#edit'
@@ -18,4 +16,9 @@ Rails.application.routes.draw do
   get '/article/:id', to: 'article#show'
   get '/profile/:id', to: 'profile#show'
   # get '/profile/:id/favorites', to: TODO
+
+  devise_for :users
+  # TODO: Set up some route aliases to match Conduit spec
+  # get '/register', to: 'devise/registrations#new'
+  # get '/login', to: 'devise/sessions#new'
 end
