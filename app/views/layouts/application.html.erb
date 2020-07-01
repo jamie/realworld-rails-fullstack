@@ -35,9 +35,18 @@
               <i class="ion-gear-a"></i>&nbsp;Settings
             </a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">Sign up</a>
-          </li>
+          <% if current_user %>
+            <li class="nav-item">
+              <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
+            </li>
+          <% else %>
+            <li class="nav-item">
+              <%= link_to 'Sign in', new_user_session_path, class: 'nav-link' %>
+            </li>
+            <li class="nav-item">
+              <%= link_to 'Sign up', new_user_registration_path, class: 'nav-link' %>
+            </li>
+          <% end %>
         </ul>
       </div>
     </nav>
