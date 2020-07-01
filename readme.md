@@ -27,7 +27,7 @@ However, on top of the generated base we are also using:
 
 # Getting started
 
-This application was written for Ruby 2.6, and Rails 6.0.
+This application was written against Ruby 2.6, and Rails 6.0.
 
 By default, it uses a local SQLite3 database, update `config/database.yml` if you want MySQL or Postgres.
 
