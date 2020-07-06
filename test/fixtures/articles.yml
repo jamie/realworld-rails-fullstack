@@ -1,0 +1,24 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+webapps:
+  title: How to build webapps that scale
+  slug: webapps
+  description: This is the description for the post
+  body: >
+    Web development technologies have evolved at an incredible clip over the past few years.
+    
+    <h2 id="introducing-ionic">Introducing RealWorld.</h2>
+    
+    It's a great solution for learning how other frameworks work.
+  user: eric
+
+song:
+  title: The song you won't ever stop singing. No matter how hard you try.
+  slug: song
+  description: This is the description for the post
+  body: >
+    This is the song that never ends.
+    Yes it goes on and on my friends.
+    Some people started singing it, not knowing what it was,
+    And they'll continue singing it forever just because
+  user: albert
