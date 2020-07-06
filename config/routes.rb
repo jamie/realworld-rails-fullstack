@@ -13,8 +13,8 @@ Rails.application.routes.draw do
   get '/settings', to: 'settings#edit'
   get '/editor', to: 'article#new'
   get '/editor/:id', to: 'article#edit'
-  get '/article/:id', to: 'article#show'
-  get '/profile/:id', to: 'profile#show'
+  get '/article/:id', to: 'article#show', as: :article
+  get '/profile/:id', to: 'profile#show', as: :profile
   # get '/profile/:id/favorites', to: TODO
 
   devise_for :users
