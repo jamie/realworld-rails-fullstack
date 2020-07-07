@@ -31,5 +31,7 @@ jobs:
       run: sudo apt-get install libsqlite3-dev
     - name: Bundler
       run: bundle install
+    - name: Code lint
+      run: standardrb
     - name: Run tests
       run: bundle exec rake
