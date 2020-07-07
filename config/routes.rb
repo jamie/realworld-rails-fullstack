@@ -10,7 +10,8 @@ Rails.application.routes.draw do
 
   # get '/login'
   # get '/register'
-  get '/settings', to: 'settings#edit'
+  get '/settings', to: 'settings#edit', as: :user
+  patch '/settings', to: 'settings#update'
   get '/editor', to: 'article#new'
   get '/editor/:id', to: 'article#edit'
   get '/article/:slug', to: 'article#show', as: :article
