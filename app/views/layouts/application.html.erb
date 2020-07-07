@@ -19,11 +19,11 @@
 
      <nav class="navbar navbar-light">
       <div class="container">
-        <a class="navbar-brand" href="index.html">conduit</a>
+        <%= link_to 'conduit', home_path, class: 'navbar-brand' %>
         <ul class="nav navbar-nav pull-xs-right">
           <li class="nav-item">
-            <!-- Add "active" class when you're on that page" -->
-            <a class="nav-link active" href="">Home</a>
+            <!-- TODO: Add "active" class when you're on that page" -->
+            <%= link_to 'Home', home_path, class: 'nav-link' %>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="">
