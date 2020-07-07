@@ -8,6 +8,6 @@ class ApplicationController < ActionController::Base
   end
 
   def require_logged_in
-    redirect_to home_url unless user_signed_in?
+    redirect_to home_path unless user_signed_in?
   end
 end

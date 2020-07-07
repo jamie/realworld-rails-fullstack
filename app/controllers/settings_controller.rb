@@ -6,7 +6,7 @@ class SettingsController < ApplicationController
   end
 
   def update
-    current_user.update_attributes(permitted_profile_attributes)
+    current_user.update(permitted_profile_attributes)
   end
 
   private
