@@ -25,17 +25,17 @@
             <!-- TODO: Add "active" class when you're on that page" -->
             <%= link_to 'Home', home_path, class: 'nav-link' %>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="">
-              <i class="ion-compose"></i>&nbsp;New Post
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="<%= settings_path %>">
-              <i class="ion-gear-a"></i>&nbsp;Settings
-            </a>
-          </li>
           <% if current_user %>
+            <li class="nav-item">
+              <a class="nav-link" href="">
+                <i class="ion-compose"></i>&nbsp;New Post
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="<%= settings_path %>">
+                <i class="ion-gear-a"></i>&nbsp;Settings
+              </a>
+            </li>
             <li class="nav-item">
               <a class="nav-link" href="<%= profile_path(current_user.username) %>">
                 <img class="user-pic" src="<%= profile_image(current_user) %>">

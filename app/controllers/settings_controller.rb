@@ -1,4 +1,6 @@
 class SettingsController < ApplicationController
+  before_action :require_logged_in
+
   def edit
     @user = current_user
   end
