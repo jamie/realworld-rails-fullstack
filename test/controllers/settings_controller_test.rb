@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class SettingsControllerTest < ActionDispatch::IntegrationTest
   include Devise::Test::IntegrationHelpers
@@ -20,9 +20,9 @@ class SettingsControllerTest < ActionDispatch::IntegrationTest
 
   test "submit form" do
     sign_in users(:jamie)
-    patch settings_path, params: { user: { bio: 'A New Bio' } }
+    patch settings_path, params: {user: {bio: "A New Bio"}}
 
     assert_response :success
-    assert_equal 'A New Bio', users(:jamie).bio
+    assert_equal "A New Bio", users(:jamie).bio
   end
 end

@@ -16,7 +16,7 @@ class SettingsController < ApplicationController
       :profile_photo_url,
       :username,
       :bio,
-      :email,
+      :email
       # TODO: password,
     ])
   end

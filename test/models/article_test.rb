@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class ArticleTest < ActiveSupport::TestCase
   class AuthorTest < ActiveSupport::TestCase
@@ -9,7 +9,7 @@ class ArticleTest < ActiveSupport::TestCase
 
   class BodyToHtmlTest < ActiveSupport::TestCase
     test "converts body to HTML" do
-      assert_match /<p>/, articles(:song).body_to_html
+      assert_match(/<p>/, articles(:song).body_to_html)
     end
 
     test "is HTML safe for embedding in views" do
