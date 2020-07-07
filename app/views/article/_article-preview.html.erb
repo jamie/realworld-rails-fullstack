@@ -1,0 +1,17 @@
+<div class="article-preview">
+  <div class="article-meta">
+    <a href="profile.html"><img src="<%= profile_image(article.author) %>" /></a>
+    <div class="info">
+      <a href="<%= profile_path(article.author.username) %>" class="author"><%= article.author.username %></a>
+      <span class="date"><%= article.created_at_formatted %></span>
+    </div>
+    <button class="btn btn-outline-primary btn-sm pull-xs-right">
+      <i class="ion-heart"></i> 29
+    </button>
+  </div>
+  <a href="<%= article_path(article.slug) %>" class="preview-link">
+    <h1><%= article.title %></h1>
+    <p><%= article.description %></p>
+    <span>Read more...</span>
+  </a>
+</div>

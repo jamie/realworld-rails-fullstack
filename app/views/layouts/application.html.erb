@@ -37,6 +37,11 @@
           </li>
           <% if current_user %>
             <li class="nav-item">
+              <a class="nav-link" href="<%= profile_path(current_user.username) %>">
+                <img class="user-pic" src="<%= profile_image(current_user) %>">
+                <%= current_user.username %>
+              </a>
+            <li class="nav-item">
               <%= link_to 'Sign out', destroy_user_session_path, method: :delete, class: 'nav-link' %>
             </li>
           <% else %>

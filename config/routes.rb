@@ -14,7 +14,7 @@ Rails.application.routes.draw do
   get '/editor', to: 'article#new'
   get '/editor/:id', to: 'article#edit'
   get '/article/:slug', to: 'article#show', as: :article
-  get '/profile/:id', to: 'profile#show', as: :profile
+  get '/profile/:username', to: 'profile#show', as: :profile
   # get '/profile/:id/favorites', to: TODO
 
   devise_for :users
