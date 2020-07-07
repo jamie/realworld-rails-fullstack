@@ -33,5 +33,7 @@ jobs:
       run: bundle install
     - name: Code lint
       run: standardrb
+    - name: Precompile assets
+      run: NODE_ENV=test bundle exec rails webpacker:compile
     - name: Run tests
       run: bundle exec rake
