@@ -1,5 +1,5 @@
 <div class="article-meta">
-  <a href=""><img src="http://i.imgur.com/Qr71crq.jpg" /></a>
+  <a href=""><img src="<%= profile_image(article.author) %>" /></a>
   <div class="info">
     <a href="<%= profile_path(@article.author) %>" class="author"><%= @article.author.username %></a>
     <span class="date"><%= @article.created_at_formatted %></span>
