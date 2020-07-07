@@ -1,13 +1,13 @@
 <div class="article-meta">
   <a href=""><img src="<%= profile_image(article.author) %>" /></a>
   <div class="info">
-    <a href="<%= profile_path(@article.author) %>" class="author"><%= @article.author.username %></a>
-    <span class="date"><%= @article.created_at_formatted %></span>
+    <a href="<%= profile_path(article.author.username) %>" class="author"><%= article.author.username %></a>
+    <span class="date"><%= article.created_at_formatted %></span>
   </div>
   <button class="btn btn-sm btn-outline-secondary">
     <i class="ion-plus-round"></i>
     &nbsp;
-    Follow <%= @article.author.username %> <span class="counter">(10)</span>
+    Follow <%= article.author.username %> <span class="counter">(10)</span>
   </button>
   &nbsp;&nbsp;
   <button class="btn btn-sm btn-outline-primary">
